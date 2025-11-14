@@ -102,11 +102,36 @@
           </button>
         </div>
         <div class="md:hidden">
-          <button class="text-text-light">
+          <button id="mobile-menu-button" class="text-text-light" onclick="toggleMobileMenu()">
             <span class="material-symbols-outlined">menu</span>
           </button>
         </div>
       </header>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/10 z-40">
+        <div class="flex flex-col px-6 py-4 gap-4">
+          <a
+            class="text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors py-2"
+            href="#schedule"
+            onclick="toggleMobileMenu()"
+            >Program</a
+          >
+          <a
+            class="text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors py-2"
+            href="#sponsors"
+            onclick="toggleMobileMenu()"
+            >Sponsorlar</a
+          >
+          <button
+            class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] border border-primary hover:bg-primary/30 transition-colors mt-2"
+            onclick="toggleMobileMenu()"
+          >
+            <span class="truncate">
+              Kayıtlar çok yakında!
+            </span>
+          </button>
+        </div>
+      </div>
       <main class="flex-grow">
         <div class="px-6 sm:px-10 lg:px-20 py-5">
           <div class="layout-content-container flex flex-col max-w-5xl mx-auto">
@@ -398,5 +423,32 @@
         </div>
       </footer>
     </div>
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        const button = document.getElementById('mobile-menu-button');
+        const icon = button.querySelector('.material-symbols-outlined');
+        
+        if (menu.classList.contains('hidden')) {
+          menu.classList.remove('hidden');
+          icon.textContent = 'close';
+        } else {
+          menu.classList.add('hidden');
+          icon.textContent = 'menu';
+        }
+      }
+      
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', function(event) {
+        const menu = document.getElementById('mobile-menu');
+        const button = document.getElementById('mobile-menu-button');
+        
+        if (!menu.contains(event.target) && !button.contains(event.target)) {
+          if (!menu.classList.contains('hidden')) {
+            toggleMobileMenu();
+          }
+        }
+      });
+    </script>
   </body>
 </html>
