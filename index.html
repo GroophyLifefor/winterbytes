@@ -46,7 +46,8 @@
         font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
       }
 
-      html, body {
+      html,
+      body {
         scroll-behavior: smooth;
       }
     </style>
@@ -84,13 +85,20 @@
           </button>
         </div>
         <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-text-light" onclick="toggleMobileMenu()">
+          <button
+            id="mobile-menu-button"
+            class="text-text-light"
+            onclick="toggleMobileMenu()"
+          >
             <span class="material-symbols-outlined">menu</span>
           </button>
         </div>
       </header>
       <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/10 z-40">
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden fixed top-[73px] left-0 right-0 bg-background-dark/95 backdrop-blur-sm border-b border-white/10 z-40"
+      >
         <div class="flex flex-col px-6 py-4 gap-4">
           <a
             class="text-text-dark text-base font-medium leading-normal hover:text-primary transition-colors py-2"
@@ -108,9 +116,7 @@
             class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] border border-primary hover:bg-primary/30 transition-colors mt-2"
             onclick="toggleMobileMenu()"
           >
-            <span class="truncate">
-              Kayıtlar çok yakında!
-            </span>
+            <span class="truncate"> Kayıtlar çok yakında! </span>
           </button>
         </div>
       </div>
@@ -221,9 +227,11 @@
               >
                 Kamp Programı
               </h2>
-              
+
               <!-- Tabs -->
-              <div class="flex flex-wrap gap-2 justify-center mb-8 border-b border-white/10 pb-4">
+              <div
+                class="flex flex-wrap gap-2 justify-center mb-8 border-b border-white/10 pb-4"
+              >
                 <button
                   onclick="switchDay(1)"
                   id="tab-day-1"
@@ -257,82 +265,188 @@
                     Yazılım ve Siber Güvenlik Eğitimleri
                   </h3>
                   <p class="text-text-dark">
-                    Toplam: <span class="text-primary font-semibold">4 saat 15 dakika</span> eğitim
+                    Toplam:
+                    <span class="text-primary font-semibold"
+                      >4 saat 15 dakika</span
+                    >
+                    eğitim
                   </p>
                 </div>
-                <div class="bg-background-dark/30 rounded-lg p-6 border border-white/10">
+                <div
+                  class="bg-background-dark/30 rounded-lg p-6 border border-white/10"
+                >
                   <div class="space-y-3">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:00 - 10:15</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:00 - 10:15
+                      </div>
                       <div class="flex-1">
                         <div class="text-text-light font-semibold">Keynote</div>
-                        <div class="text-text-dark text-sm">Oğuzhan Yetimhellaç</div>
+                        <div class="text-text-dark text-sm">
+                          Oğuzhan Yetimhellaç
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:15 - 10:30</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:15 - 10:30
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Program tanıtımı</div>
-                        <div class="text-text-dark text-sm">Murat Kirazkaya</div>
+                        <div class="text-text-light font-semibold">
+                          Program tanıtımı
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          Murat Kirazkaya
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:30 - 10:45</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:30 - 10:45
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Katılımcıların sınıflara yönlendirilmesi</div>
+                        <div class="text-text-light font-semibold">
+                          Katılımcıların sınıflara yönlendirilmesi
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:45 - 12:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:45 - 12:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P1</div>
-                        <div class="text-text-dark text-sm">75 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P1
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          75 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">12:00 - 13:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        12:00 - 13:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Öğlen Yemeği</div>
+                        <div class="text-text-light font-semibold">
+                          Öğlen Yemeği
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">13:15 - 13:45</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        13:15 - 13:45
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Sınıf içi networking</div>
-                        <div class="text-text-dark text-sm">Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Sınıf içi networking
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">13:45 - 15:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        13:45 - 15:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P2</div>
-                        <div class="text-text-dark text-sm">75 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P2
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          75 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">15:00 - 16:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        15:00 - 16:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Program Geneli Network Arası</div>
+                        <div class="text-text-light font-semibold">
+                          Program Geneli Network Arası
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">16:00 - 17:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        16:00 - 17:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P3</div>
-                        <div class="text-text-dark text-sm">60 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P3
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          60 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">17:00 - 17:15</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        17:00 - 17:15
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Ara mola</div>
+                        <div class="text-text-light font-semibold">
+                          Ara mola
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">17:15 - 18:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        17:15 - 18:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P4</div>
-                        <div class="text-text-dark text-sm">45 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P4
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          45 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -346,75 +460,176 @@
                     Yazılım ve Siber Güvenlik Eğitimleri
                   </h3>
                   <p class="text-text-dark">
-                    Toplam: <span class="text-primary font-semibold">4 saat 45 dakika</span> eğitim • <span class="text-primary font-semibold">Fuar alanı açık</span>
+                    Toplam:
+                    <span class="text-primary font-semibold"
+                      >4 saat 45 dakika</span
+                    >
+                    eğitim •
+                    <span class="text-primary font-semibold"
+                      >Fuar alanı açık</span
+                    >
                   </p>
                 </div>
-                <div class="bg-background-dark/30 rounded-lg p-6 border border-white/10">
+                <div
+                  class="bg-background-dark/30 rounded-lg p-6 border border-white/10"
+                >
                   <div class="space-y-3">
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:00 - 10:45</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:00 - 10:45
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P5</div>
-                        <div class="text-text-dark text-sm">45 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P5
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          45 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">10:45 - 11:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        10:45 - 11:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Ara mola</div>
+                        <div class="text-text-light font-semibold">
+                          Ara mola
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">11:00 - 12:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        11:00 - 12:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P6</div>
-                        <div class="text-text-dark text-sm">60 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P6
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          60 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">12:00 - 13:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        12:00 - 13:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Öğlen Yemeği</div>
+                        <div class="text-text-light font-semibold">
+                          Öğlen Yemeği
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">13:15 - 13:45</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        13:15 - 13:45
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Sınıf içi networking</div>
-                        <div class="text-text-dark text-sm">Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Sınıf içi networking
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">13:45 - 15:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        13:45 - 15:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P7</div>
-                        <div class="text-text-dark text-sm">75 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P7
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          75 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">15:00 - 16:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        15:00 - 16:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Program Geneli Network Arası</div>
+                        <div class="text-text-light font-semibold">
+                          Program Geneli Network Arası
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">16:00 - 17:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        16:00 - 17:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P8</div>
-                        <div class="text-text-dark text-sm">60 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P8
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          60 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">17:00 - 17:15</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-background-dark/50 rounded border border-white/5"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        17:00 - 17:15
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Ara mola</div>
+                        <div class="text-text-light font-semibold">
+                          Ara mola
+                        </div>
                       </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30">
-                      <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">17:15 - 18:00</div>
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-3 p-3 bg-primary/10 rounded border border-primary/30"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        17:15 - 18:00
+                      </div>
                       <div class="flex-1">
-                        <div class="text-text-light font-semibold">Eğitim P9</div>
-                        <div class="text-text-dark text-sm">45 dakika • Zorunlu Katılım</div>
+                        <div class="text-text-light font-semibold">
+                          Eğitim P9
+                        </div>
+                        <div class="text-text-dark text-sm">
+                          45 dakika • Zorunlu Katılım
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -428,16 +643,54 @@
                     Konferans ve Fuar Alanı
                   </h3>
                   <p class="text-text-dark">
-                    Konferans zamanlaması ve listesi sonradan eklenecek
+                    Uzman konuşmacılardan inspiratif sunumlar
                   </p>
                 </div>
-                <div class="bg-background-dark/30 rounded-lg p-12 border border-white/10 text-center">
-                  <p class="text-text-dark text-lg">
-                    Konferans programı yakında eklenecek
-                  </p>
+
+                <div
+                  class="bg-background-dark/30 rounded-lg p-6 border border-white/10"
+                >
+                  <div class="space-y-3">
+                    <!-- Konuşmacı 1 -->
+                    <div
+                      class="flex flex-col sm:flex-row sm:items-center gap-4 p-4 bg-background-dark/50 rounded border border-white/5 hover:border-primary/30 transition-all"
+                    >
+                      <div
+                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
+                      >
+                        <!-- 10:00 - 10:45 -->
+                         Saat Aralığı Gelecek
+                      </div>
+                      <div class="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                        <div
+                          class="w-10 h-10 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center overflow-hidden flex-shrink-0"
+                        >
+                          <img
+                            src="/speaker/alparslan-aydin.jpg"
+                            alt="Alparslan Aydın"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                          />
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold hidden"
+                          >
+                            AA
+                          </div>
+                        </div>
+                        <div class="flex flex-col">
+                          <div class="text-text-light font-semibold">
+                            Web Güvenliği: Temel Kurallar
+                          </div>
+                          <div class="text-text-dark text-sm">
+                            Alparslan Aydın • SiberTim / Siber Güvenlik Uzmanı
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              
+
               <!-- Instructors Section -->
               <div class="mt-16 pt-12 border-t border-white/10">
                 <h3
@@ -448,67 +701,114 @@
 
                 <!-- Yazılım Geliştirme Eğitmenleri -->
                 <div class="mb-12">
-                  <h4 class="text-text-light text-xl font-bold mb-6 text-center">
-                    <span class="text-primary">Yazılım Geliştirme</span> Eğitmenleri
+                  <h4
+                    class="text-text-light text-xl font-bold mb-6 text-center"
+                  >
+                    <span class="text-primary">Yazılım Geliştirme</span>
+                    Eğitmenleri
                   </h4>
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
+                  >
                     <!-- Engin Özkurt -->
-                    <div class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
                       <div class="flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden">
-                          <img 
-                            src="/teacher/engin-ozkurt.jpg" 
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/engin-ozkurt.jpg"
                             alt="Engin Özkurt"
                             class="w-full h-full object-cover"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                           />
-                          <div class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden">
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
                             EÖ
                           </div>
                         </div>
-                        <h5 class="text-text-light font-bold text-lg mb-1">Engin Özkurt</h5>
-                        <p class="text-text-dark text-sm mb-3">IBM / Senior Site Reliability Engineer</p>
-                        <div class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20">
-                          <p class="text-text-dark text-xs font-medium mb-1">Eğitim Konusu</p>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Engin Özkurt
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          IBM / Senior Site Reliability Engineer
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
                           <p class="text-text-light text-sm">~~~~~~</p>
                         </div>
                       </div>
                     </div>
 
                     <!-- Neoviz Armağan -->
-                    <div class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
                       <div class="flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden">
-                          <img 
-                            src="/teacher/neoviz-armagan.jpg" 
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/neoviz-armagan.jpg"
                             alt="Neoviz Armağan"
                             class="w-full h-full object-cover"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                           />
-                          <div class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden">
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
                             NA
                           </div>
                         </div>
-                        <h5 class="text-text-light font-bold text-lg mb-1">Neoviz Armağan</h5>
-                        <p class="text-text-dark text-sm mb-3">Neoviz Teknoloji / Kurucu</p>
-                        <div class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20">
-                          <p class="text-text-dark text-xs font-medium mb-1">Eğitim Konusu</p>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Neoviz Armağan
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          Neoviz Teknoloji / Kurucu
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
                           <p class="text-text-light text-sm">~~~~~~</p>
                         </div>
                       </div>
                     </div>
 
                     <!-- Placeholder for 2 more -->
-                    <div class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]">
+                    <div
+                      class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]"
+                    >
                       <div class="text-center">
-                        <span class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block">person_add</span>
-                        <p class="text-text-dark/60 text-sm italic">Eğitmen eklenecek</p>
+                        <span
+                          class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block"
+                          >person_add</span
+                        >
+                        <p class="text-text-dark/60 text-sm italic">
+                          Eğitmen eklenecek
+                        </p>
                       </div>
                     </div>
-                    <div class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]">
+                    <div
+                      class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]"
+                    >
                       <div class="text-center">
-                        <span class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block">person_add</span>
-                        <p class="text-text-dark/60 text-sm italic">Eğitmen eklenecek</p>
+                        <span
+                          class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block"
+                          >person_add</span
+                        >
+                        <p class="text-text-dark/60 text-sm italic">
+                          Eğitmen eklenecek
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -516,67 +816,157 @@
 
                 <!-- Siber Güvenlik Eğitmenleri -->
                 <div>
-                  <h4 class="text-text-light text-xl font-bold mb-6 text-center">
+                  <h4
+                    class="text-text-light text-xl font-bold mb-6 text-center"
+                  >
                     <span class="text-primary">Siber Güvenlik</span> Eğitmenleri
                   </h4>
-                  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6"
+                  >
                     <!-- Kaan Bekar -->
-                    <div class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
                       <div class="flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden">
-                          <img 
-                            src="/teacher/kaan-bekar.jpg" 
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/kaan-bekar.jpg"
                             alt="Kaan Bekar"
                             class="w-full h-full object-cover"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                           />
-                          <div class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden">
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
                             KB
                           </div>
                         </div>
-                        <h5 class="text-text-light font-bold text-lg mb-1">Kaan Bekar</h5>
-                        <p class="text-text-dark text-sm mb-3">Privia Security / Cyber Security Consultant</p>
-                        <div class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20">
-                          <p class="text-text-dark text-xs font-medium mb-1">Eğitim Konusu</p>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Kaan Bekar
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          Privia Security / Cyber Security Consultant
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
                           <p class="text-text-light text-sm">~~~~~~</p>
                         </div>
                       </div>
                     </div>
 
                     <!-- Samet Yılmaz Temel -->
-                    <div class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10">
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
                       <div class="flex flex-col items-center text-center">
-                        <div class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden">
-                          <img 
-                            src="/teacher/samet-yılmaz-temel.jpg" 
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/samet-yılmaz-temel.jpg"
                             alt="Samet Yılmaz Temel"
                             class="w-full h-full object-cover"
                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
                           />
-                          <div class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden">
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
                             SYT
                           </div>
                         </div>
-                        <h5 class="text-text-light font-bold text-lg mb-1">Samet Yılmaz Temel</h5>
-                        <p class="text-text-dark text-sm mb-3">T.C. Cumhurbaşkanlığı / Cybersecurity</p>
-                        <div class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20">
-                          <p class="text-text-dark text-xs font-medium mb-1">Eğitim Konusu</p>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Samet Yılmaz Temel
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          T.C. Cumhurbaşkanlığı / Cybersecurity
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
                           <p class="text-text-light text-sm">~~~~~~</p>
                         </div>
                       </div>
                     </div>
 
-                    <!-- Placeholder for 2 more -->
-                    <div class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]">
-                      <div class="text-center">
-                        <span class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block">person_add</span>
-                        <p class="text-text-dark/60 text-sm italic">Eğitmen eklenecek</p>
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
+                      <div class="flex flex-col items-center text-center">
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/okan-kurtulus.jpg"
+                            alt="Okan Kurtuluş"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                          />
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
+                            OK
+                          </div>
+                        </div>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Okan Kurtuluş
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          Halkbank / Senior Cyber Security Engineer
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
+                          <p class="text-text-light text-sm">Threat Hunting</p>
+                        </div>
                       </div>
                     </div>
-                    <div class="bg-background-dark/30 rounded-xl border border-dashed border-white/20 p-6 flex items-center justify-center min-h-[280px]">
-                      <div class="text-center">
-                        <span class="material-symbols-outlined text-text-dark/40 text-5xl mb-2 block">person_add</span>
-                        <p class="text-text-dark/60 text-sm italic">Eğitmen eklenecek</p>
+
+                    <div
+                      class="bg-background-dark/50 rounded-xl border border-white/10 p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/10"
+                    >
+                      <div class="flex flex-col items-center text-center">
+                        <div
+                          class="w-24 h-24 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border-2 border-primary/30 mb-4 flex items-center justify-center overflow-hidden"
+                        >
+                          <img
+                            src="/teacher/enes-canbazoglu.jpg"
+                            alt="Enes Canbazoğlu"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                          />
+                          <div
+                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-2xl font-bold hidden"
+                          >
+                            EC
+                          </div>
+                        </div>
+                        <h5 class="text-text-light font-bold text-lg mb-1">
+                          Enes Canbazoğlu
+                        </h5>
+                        <p class="text-text-dark text-sm mb-3">
+                          Secage / Cyber Security Specialist
+                        </p>
+                        <div
+                          class="w-full bg-primary/10 rounded-lg p-3 border border-primary/20"
+                        >
+                          <p class="text-text-dark text-xs font-medium mb-1">
+                            Eğitim Konusu
+                          </p>
+                          <p class="text-text-light text-sm">Network Güvenliği Temelleri</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -724,11 +1114,6 @@
                   alt="Privia Security"
                   src="/logo/dogus_cay.png"
                 />
-                <img
-                  class="h-20 w-auto sm:h-40 rounded-lg"
-                  alt="Privia Security"
-                  src="/logo/odugk.jpg"
-                />
               </div>
             </section>
             <!-- CTA Section -->
@@ -802,8 +1187,7 @@
                 ></path>
               </svg>
             </a>
-          -->
-          </div>
+          --></div>
         </div>
       </footer>
     </div>
@@ -812,7 +1196,7 @@
         const menu = document.getElementById('mobile-menu');
         const button = document.getElementById('mobile-menu-button');
         const icon = button.querySelector('.material-symbols-outlined');
-        
+
         if (menu.classList.contains('hidden')) {
           menu.classList.remove('hidden');
           icon.textContent = 'close';
@@ -821,12 +1205,12 @@
           icon.textContent = 'menu';
         }
       }
-      
+
       // Close mobile menu when clicking outside
-      document.addEventListener('click', function(event) {
+      document.addEventListener('click', function (event) {
         const menu = document.getElementById('mobile-menu');
         const button = document.getElementById('mobile-menu-button');
-        
+
         if (!menu.contains(event.target) && !button.contains(event.target)) {
           if (!menu.classList.contains('hidden')) {
             toggleMobileMenu();
@@ -840,15 +1224,25 @@
         for (let i = 1; i <= 3; i++) {
           document.getElementById(`content-day-${i}`).classList.add('hidden');
           const tab = document.getElementById(`tab-day-${i}`);
-          tab.classList.remove('border-primary', 'bg-primary/20', 'text-primary');
+          tab.classList.remove(
+            'border-primary',
+            'bg-primary/20',
+            'text-primary'
+          );
           tab.classList.add('border-transparent', 'text-text-dark');
         }
-        
+
         // Show selected content
-        document.getElementById(`content-day-${dayNumber}`).classList.remove('hidden');
+        document
+          .getElementById(`content-day-${dayNumber}`)
+          .classList.remove('hidden');
         const activeTab = document.getElementById(`tab-day-${dayNumber}`);
         activeTab.classList.remove('border-transparent', 'text-text-dark');
-        activeTab.classList.add('border-primary', 'bg-primary/20', 'text-primary');
+        activeTab.classList.add(
+          'border-primary',
+          'bg-primary/20',
+          'text-primary'
+        );
       }
     </script>
   </body>
