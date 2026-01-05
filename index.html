@@ -650,120 +650,8 @@
                 <div
                   class="bg-background-dark/30 rounded-lg p-6 border border-white/10"
                 >
-                  <div class="space-y-3">
-                    <!-- Konuşmacı 1 -->
-                    <div
-                      class="flex flex-col sm:flex-row sm:items-center gap-4 p-4 bg-background-dark/50 rounded border border-white/5 hover:border-primary/30 transition-all"
-                    >
-                      <div
-                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
-                      >
-                        <!-- 10:00 - 10:45 -->
-                         Saat Aralığı Gelecek
-                      </div>
-                      <div class="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <div
-                          class="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center overflow-hidden flex-shrink-0"
-                        >
-                          <img
-                            src="/speaker/alparslan-aydin.jpg"
-                            alt="Alparslan Aydın"
-                            class="w-full h-full object-cover"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                          />
-                          <div
-                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold hidden"
-                          >
-                            AA
-                          </div>
-                        </div>
-                        <div class="flex flex-col">
-                          <div class="text-text-light font-semibold text-lg">
-                            Web Güvenliği: Temel Kurallar
-                          </div>
-                          <div class="text-text-dark text-sm">
-                            Alparslan Aydın • SiberTim / Siber Güvenlik Uzmanı
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Konuşmacı 2 -->
-                    <div
-                      class="flex flex-col sm:flex-row sm:items-center gap-4 p-4 bg-background-dark/50 rounded border border-white/5 hover:border-primary/30 transition-all"
-                    >
-                      <div
-                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
-                      >
-                        <!-- 10:00 - 10:45 -->
-                         Saat Aralığı Gelecek
-                      </div>
-                      <div class="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <div
-                          class="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center overflow-hidden flex-shrink-0"
-                        >
-                          <img
-                            src="/speaker/mert-can-altin.png"
-                            alt="Mert Can Altın"
-                            class="w-full h-full object-cover"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                          />
-                          <div
-                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold hidden"
-                          >
-                            MA
-                          </div>
-                        </div>
-                        <div class="flex flex-col">
-                          <div class="text-text-light font-semibold text-lg">
-                            ~~~~~~
-                          </div>
-                          <div class="text-text-dark text-sm">
-                            Mert Can Altın • Trendyol / Software Engineer • Node.js Core Contributor
-                          </div>
-                          <div class="text-white text-xs bg-green-800 w-fit py-1 px-2 rounded-full mt-1">
-                            Video Konferans
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Konuşmacı 3 -->
-                    <div
-                      class="flex flex-col sm:flex-row sm:items-center gap-4 p-4 bg-background-dark/50 rounded border border-white/5 hover:border-primary/30 transition-all"
-                    >
-                      <div
-                        class="flex-shrink-0 w-32 text-primary font-semibold text-sm"
-                      >
-                        <!-- 10:00 - 10:45 -->
-                         Saat Aralığı Gelecek
-                      </div>
-                      <div class="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                        <div
-                          class="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center overflow-hidden flex-shrink-0"
-                        >
-                          <img
-                            src="/speaker/oguzhan-egm.jpg"
-                            alt="Oğuzhan Orhan Eroğlu"
-                            class="w-full h-full object-cover"
-                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-                          />
-                          <div
-                            class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold hidden"
-                          >
-                            OOE
-                          </div>
-                        </div>
-                        <div class="flex flex-col">
-                          <div class="text-text-light font-semibold text-lg">
-                            ~~~~~~
-                          </div>
-                          <div class="text-text-dark text-sm">
-                            Oğuzhan Orhan Eroğlu • EGM / Siber Suçlarla Mücadele
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="space-y-3" id="speakers-container">
+                    <!-- Speakers will be loaded here dynamically -->
                   </div>
                 </div>
               </div>
@@ -1201,6 +1089,11 @@
                   alt="Privia Security"
                   src="/logo/ist-coders.png"
                 />
+                <img
+                  class="h-20 w-auto sm:h-40 rounded-lg"
+                  alt="Privia Security"
+                  src="/logo/migros-one.png"
+                />
               </div>
             </section>
             <!-- CTA Section -->
@@ -1279,6 +1172,93 @@
       </footer>
     </div>
     <script>
+      // Speaker data
+      const speakersData = [
+        {
+          name: 'Alparslan Aydın',
+          title: 'Web Güvenliği: Temel Kurallar',
+          company: 'SiberTim / Siber Güvenlik Uzmanı',
+          image: '/speaker/alparslan-aydin.jpg',
+          initials: 'AA',
+          timeSlot: 'Saat Aralığı Gelecek',
+          isVideoConference: false
+        },
+        {
+          name: 'Mert Can Altın',
+          title: '~~~~~~',
+          company: 'Trendyol / Software Engineer • Node.js Core Contributor',
+          image: '/speaker/mert-can-altin.png',
+          initials: 'MA',
+          timeSlot: 'Saat Aralığı Gelecek',
+          isVideoConference: true
+        },
+        {
+          name: 'Oğuzhan Orhan Eroğlu',
+          title: '~~~~~~',
+          company: 'EGM / Siber Suçlarla Mücadele',
+          image: '/speaker/oguzhan-egm.jpg',
+          initials: 'OOE',
+          timeSlot: 'Saat Aralığı Gelecek',
+          isVideoConference: false
+        },
+        {
+          name: 'Doğukan Kılıçarslan',
+          title: 'iOS Geliştirmede Güvenlik',
+          company: 'Migros One / iOS Engineer',
+          image: '/speaker/dogukan-kılıcarslan.png',
+          initials: 'DK',
+          timeSlot: 'Saat Aralığı Gelecek',
+          isVideoConference: false
+        }
+      ];
+
+      // Function to render speakers
+      function renderSpeakers() {
+        const container = document.getElementById('speakers-container');
+        if (!container) return;
+
+        container.innerHTML = speakersData
+          .map(
+            (speaker) => `
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 p-4 bg-background-dark/50 rounded border border-white/5 hover:border-primary/30 transition-all">
+            <div class="flex-shrink-0 w-32 text-primary font-semibold text-sm">
+              ${speaker.timeSlot}
+            </div>
+            <div class="flex-1 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 flex items-center justify-center overflow-hidden flex-shrink-0">
+                <img
+                  src="${speaker.image}"
+                  alt="${speaker.name}"
+                  class="w-full h-full object-cover"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="w-full h-full bg-primary/20 flex items-center justify-center text-primary text-xs font-bold hidden">
+                  ${speaker.initials}
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="text-text-light font-semibold text-lg">
+                  ${speaker.title}
+                </div>
+                <div class="text-text-dark text-sm">
+                  ${speaker.name} • ${speaker.company}
+                </div>
+                ${
+                  speaker.isVideoConference
+                    ? '<div class="text-white text-xs bg-green-800 w-fit py-1 px-2 rounded-full mt-1">Video Konferans</div>'
+                    : ''
+                }
+              </div>
+            </div>
+          </div>
+        `
+          )
+          .join('');
+      }
+
+      // Initialize speakers when page loads
+      document.addEventListener('DOMContentLoaded', renderSpeakers);
+
       function toggleMobileMenu() {
         const menu = document.getElementById('mobile-menu');
         const button = document.getElementById('mobile-menu-button');
