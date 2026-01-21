@@ -1503,12 +1503,13 @@
 
         {
           name: 'Rafael Gonzaga',
-          title: '~~~~~~',
+          title: 'Lies, Damn Lies, and Benchmark',
           company: 'NodeSource / Principal Open Source Engineer • Node.js TSC',
           image: '/speaker/rafael-gonzaga.jpg',
           initials: 'RG',
           timeSlot: 'Saat Aralığı Gelecek',
           isVideoConference: true,
+          isEnglish: true,
         },
 
         {
@@ -1595,13 +1596,6 @@
           topic: 'Uygulama sürekliliğini ve dayanıklılığını ölçeklendirme',
         },
         {
-          name: 'Armağan Karabina',
-          company: 'Neoviz Teknoloji ve Yapay Zeka Çözümleri / Kurucu',
-          image: '/teacher/neoviz-armagan.jpg',
-          initials: 'NA',
-          topic: 'Python ile Makine Öğrenmesine Giriş',
-        },
-        {
           name: 'Burak Çiçek',
           company: 'Tübitak / Software Engineer',
           image: '/teacher/burak-cicek.jpg',
@@ -1679,11 +1673,18 @@
                 <div class="text-text-dark text-sm">
                   ${speaker.name} • ${speaker.company}
                 </div>
-                ${
-                  speaker.isVideoConference
-                    ? '<div class="text-white text-xs bg-green-800 w-fit py-1 px-2 rounded-full mt-1">Video Konferans</div>'
-                    : ''
-                }
+                <div class="flex gap-2">
+                  ${
+                    speaker.isVideoConference
+                      ? '<div class="text-white text-xs bg-green-800 w-fit py-1 px-2 rounded-full mt-1">Video Konferans</div>'
+                      : ''
+                  }
+                  ${
+                    speaker.isEnglish
+                      ? '<div class="text-white text-xs bg-blue-800 w-fit py-1 px-2 rounded-full mt-1">İngilizce Sunum</div>'
+                      : ''
+                  }
+                </div>
               </div>
             </div>
           </div>
