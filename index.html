@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html class="dark" lang="en">
   <head>
@@ -121,7 +121,11 @@
     </script>
     <style>
       .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
       }
 
       html,
@@ -431,7 +435,9 @@
                 <p
                   class="text-primary text-base font-normal leading-normal mt-3 max-w-md text-center"
                 >
-                  2 günlük Eğitim'e kabul edilen katılımcıların <span class="underline underline-offset-2">konaklaması</span> ve eğitim günleri öğlen yemekleri karşılanmaktadır.
+                  2 günlük Eğitim'e kabul edilen katılımcıların
+                  <span class="underline underline-offset-2">konaklaması</span>
+                  ve eğitim günleri öğlen yemekleri karşılanmaktadır.
                 </p>
               </div>
 
@@ -1499,6 +1505,15 @@
       // Speaker data
       const speakersData = [
         {
+          name: 'Yavuz Selim Kıran',
+          title: 'Dış Politikalar ve kariyer',
+          company: 'T.C. Dışişleri Bakanlığı / Büyükelçi',
+          image: '/speaker/yavuz-selim-kiran.jpg',
+          initials: 'YK',
+          timeSlot: 'Saat Aralığı Gelecek',
+          isVideoConference: false,
+        },
+        {
           name: 'Taha Kırca',
           title: 'Yapay Zeka Çağında Mobil Geliştirici Kariyeri',
           company: 'Atlassian / Senior iOS Developer',
@@ -1507,7 +1522,6 @@
           timeSlot: 'Saat Aralığı Gelecek',
           isVideoConference: false,
         },
-
         {
           name: 'Rafael Gonzaga',
           title: 'Lies, Damn Lies, and Benchmark',
@@ -1566,7 +1580,8 @@
         },
         {
           name: 'Zeynep Bakırtemizler',
-          title: 'Veriyi Saklamak mı, Şifrelemek mi? Bilgi Güvenliğinde Steganografi ve Kriptoloji',
+          title:
+            'Veriyi Saklamak mı, Şifrelemek mi? Bilgi Güvenliğinde Steganografi ve Kriptoloji',
           company: 'Param / Bilgi Teknolojileri Denetim Uzmanı',
           image: '/speaker/zeynep-bakirtemizler.jpg',
           initials: 'ZB',
@@ -1695,7 +1710,7 @@
               </div>
             </div>
           </div>
-        `
+        `,
           )
           .join('');
       }
@@ -1749,7 +1764,7 @@
       // Function to render software development instructors
       function renderSoftwareInstructors() {
         const container = document.getElementById(
-          'software-instructors-container'
+          'software-instructors-container',
         );
         if (!container) return;
 
@@ -1761,7 +1776,7 @@
       // Function to render cyber security instructors
       function renderCyberSecurityInstructors() {
         const container = document.getElementById(
-          'cyber-security-instructors-container'
+          'cyber-security-instructors-container',
         );
         if (!container) return;
 
@@ -1812,7 +1827,7 @@
           tab.classList.remove(
             'border-primary',
             'bg-primary/20',
-            'text-primary'
+            'text-primary',
           );
           tab.classList.add('border-transparent', 'text-text-dark');
         }
@@ -1826,7 +1841,7 @@
         activeTab.classList.add(
           'border-primary',
           'bg-primary/20',
-          'text-primary'
+          'text-primary',
         );
       }
     </script>
