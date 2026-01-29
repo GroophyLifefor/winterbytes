@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="dark" lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title>Winterbytes 2026 | Linktree</title>
+		<meta
+			name="description"
+			content="Winterbytes 2026 için hızlı bağlantılar. Program, kayıt ve sosyal medya bağlantıları."
+		/>
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://winterbytes.ordu.dev/linktree.html" />
+
+		<link rel="icon" type="image/png" href="/f/favicon-96x96.png" sizes="96x96" />
+		<link rel="shortcut icon" href="/f/favicon.ico" />
+		<link rel="manifest" href="/f/site.webmanifest" />
+
+		<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+		<link href="https://fonts.googleapis.com" rel="preconnect" />
+		<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script id="tailwind-config">
+			tailwind.config = {
+				darkMode: 'class',
+				theme: {
+					extend: {
+						colors: {
+							primary: '#64FFDA',
+							'background-light': '#f6f6f8',
+							'background-dark': '#0A192F',
+							'text-light': '#CCD6F6',
+							'text-dark': '#8892B0',
+						},
+						fontFamily: {
+							display: ['Space Grotesk', 'sans-serif'],
+						},
+					},
+				},
+			};
+		</script>
+		<style>
+			html,
+			body {
+				scroll-behavior: smooth;
+			}
+		</style>
+	</head>
+	<body class="bg-background-light dark:bg-background-dark font-display">
+		<main class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12">
+			<div class="w-full max-w-sm sm:max-w-xl">
+				<div class="flex flex-col items-center text-center">
+					<div
+						class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center overflow-hidden"
+					>
+						<img
+							src="/f/logo.png"
+							alt="Winterbytes"
+							class="w-full h-full object-cover"
+							onerror="this.src='/f/favicon-96x96.png'"
+						/>
+					</div>
+					<h1 class="mt-3 sm:mt-4 text-text-light text-2xl sm:text-3xl font-bold">
+						Winterbytes 2026
+					</h1>
+					<p class="mt-2 text-text-dark text-xs sm:text-sm max-w-md px-2">
+						30 Ocak - 1 Şubat 2026 • Ordu, Türkiye
+					</p>
+				</div>
+
+				<!-- Real-time Event Status -->
+				<div id="event-status" class="mt-6 sm:mt-8 p-3 sm:p-4 rounded-lg border border-primary/30 bg-primary/10 text-center">
+					<div id="current-event" class="mb-2">
+						<div class="text-primary text-xs font-medium">ŞU AN</div>
+						<div id="current-event-text" class="text-text-light text-sm sm:text-base font-semibold break-words">Yükleniyor...</div>
+					</div>
+					<div id="next-event">
+						<div class="text-text-dark text-xs">SIRADA</div>
+						<div id="next-event-text" class="text-text-dark text-xs sm:text-sm break-words">Yükleniyor...</div>
+					</div>
+				</div>
+
+				<div class="mt-8 sm:mt-10 space-y-3 sm:space-y-4">
+					<a
+						class="block w-full rounded-lg border border-primary bg-primary/20 text-primary font-semibold py-3 sm:py-4 px-4 sm:px-5 text-sm sm:text-base text-center hover:bg-primary/30 transition-colors"
+						href="/index.html"
+					>
+						Ana Sayfa
+					</a>
+					<a
+						class="block w-full rounded-lg border border-primary bg-primary/20 text-primary font-semibold py-3 sm:py-4 px-4 sm:px-5 text-sm sm:text-base text-center hover:bg-primary/30 transition-colors"
+						href="/index.html#faq"
+					>
+						SSS
+					</a>
+				</div>
+
+				<div class="mt-8 sm:mt-10 grid grid-cols-3 gap-2 sm:gap-3">
+					<a
+						class="rounded-lg border border-white/10 bg-background-dark/30 text-text-light text-xs sm:text-sm py-2 sm:py-3 text-center hover:border-primary/50 hover:text-primary transition-colors"
+						href="https://x.com/winterbyts"
+						target="_blank"
+						rel="noreferrer"
+					>
+						X
+					</a>
+					<a
+						class="rounded-lg border border-white/10 bg-background-dark/30 text-text-light text-xs sm:text-sm py-2 sm:py-3 text-center hover:border-primary/50 hover:text-primary transition-colors"
+						href="https://www.instagram.com/winterbyts/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						Instagram
+					</a>
+					<a
+						class="rounded-lg border border-white/10 bg-background-dark/30 text-text-light text-xs sm:text-sm py-2 sm:py-3 text-center hover:border-primary/50 hover:text-primary transition-colors"
+						href="https://www.linkedin.com/company/winterbytes"
+						target="_blank"
+						rel="noreferrer"
+					>
+						LinkedIn
+					</a>
+				</div>
+
+				<p class="mt-6 sm:mt-8 text-center text-text-dark text-xs">
+					© 2026 Winterbytes
+				</p>
+			</div>
+		</main>
+		<script>
+			// Etkinlik programı tanımları
+			const eventSchedule = {
+				'2026-01-30': [ // 1. Gün (30 Ocak)
+					{ time: '10:00', title: 'Keynote - Oğuzhan Yetimhellaç', duration: 15 },
+					{ time: '10:15', title: 'Program tanıtımı - Murat Kirazkaya', duration: 15 },
+					{ time: '10:30', title: 'Katılımcıların sınıflara yönlendirilmesi', duration: 15 },
+					{ time: '10:45', title: 'Eğitim P1', duration: 75 },
+					{ time: '12:00', title: 'Öğlen Yemeği', duration: 60 },
+					{ time: '13:00', title: 'Eğitim P2', duration: 30 },
+					{ time: '13:30', title: 'Ara mola', duration: 10 },
+					{ time: '13:40', title: 'Eğitim 3', duration: 45 },
+					{ time: '14:25', title: 'Ara mola', duration: 10 },
+					{ time: '14:35', title: 'Eğitim 4', duration: 60 },
+					{ time: '15:35', title: 'Ara mola', duration: 10 },
+					{ time: '15:45', title: 'Eğitim 5', duration: 45 }
+				],
+				'2026-01-31': [ // 2. Gün (31 Ocak)
+					{ time: '10:00', title: 'Eğitim P5', duration: 45 },
+					{ time: '10:45', title: 'Ara mola', duration: 15 },
+					{ time: '11:00', title: 'Eğitim P6', duration: 60 },
+					{ time: '12:00', title: 'Öğlen Yemeği', duration: 60 },
+					{ time: '13:00', title: 'Eğitim 6', duration: 30 },
+					{ time: '13:30', title: 'Ara mola', duration: 10 },
+					{ time: '13:40', title: 'Eğitim 7', duration: 45 },
+					{ time: '14:25', title: 'Ara mola', duration: 10 },
+					{ time: '14:35', title: 'Eğitim 8', duration: 60 },
+					{ time: '15:35', title: 'Ara mola', duration: 10 },
+					{ time: '15:45', title: 'Eğitim 9', duration: 45 },
+					{ time: '16:30', title: 'Planlı Gezi', duration: 210 }
+				],
+				'2026-02-01': [ // 3. Gün (1 Şubat)
+					{ time: '10:00', title: 'Karşılama Konuşması', duration: 15 },
+					{ time: '10:15', title: 'Protokol', duration: 35 },
+					{ time: '11:00', title: 'Yavuz Selim Kıran - Dış Politikalar ve kariyer', duration: 30 },
+					{ time: '11:30', title: 'Öğle Arası', duration: 50 },
+					{ time: '12:20', title: 'Taha Kırca - Yapay Zeka Çağında Mobil Geliştirici Kariyeri', duration: 30 },
+					{ time: '13:00', title: 'Mehmet Bartu - Finans Firmalarında Agentic Dönüşüm (Online)', duration: 30 },
+					{ time: '13:40', title: 'Oğuzhan Orhan Eroğlu - Siber Güvenlik', duration: 30 },
+					{ time: '14:20', title: 'Mert Can Altın - Open Source\'a Contributing Rehberi (Online)', duration: 30 },
+					{ time: '15:00', title: 'Rafael Gonzaga - Lies, Damn Lies, and Benchmark (Online)', duration: 30 },
+					{ time: '15:40', title: 'Alparslan Aydın - Web Güvenliği: Temel Kurallar', duration: 30 },
+					{ time: '16:20', title: 'Batuhan Arkalı - Hayat Nedir?', duration: 20 },
+					{ time: '16:50', title: 'Doğukan Kılıçarslan - iOS Geliştirmede Güvenlik', duration: 30 },
+					{ time: '17:30', title: 'Zeynep Bakırtemizler - Veriyi Saklamak mı, Şifrelemek mi?', duration: 30 },
+					{ time: '18:10', title: 'Kaan Bekar - Geçmişten Geleceğe Sosyal Mühendislik Saldırıları', duration: 30 }
+				]
+			};
+
+			function timeToMinutes(timeStr) {
+				const [hours, minutes] = timeStr.split(':').map(Number);
+				return hours * 60 + minutes;
+			}
+
+			function getCurrentEvent() {
+				const now = new Date();
+				// Türkiye saatine çevir (UTC+3)
+				const turkeyTime = new Date(now.getTime() + (3 * 60 * 60 * 1000));
+				const currentDate = turkeyTime.toISOString().split('T')[0];
+				const currentTime = turkeyTime.getHours() * 60 + turkeyTime.getMinutes();
+				
+				const todaySchedule = eventSchedule[currentDate];
+				if (!todaySchedule) {
+					// Eğer bugün etkinlik günlerinden biriyse ama schedule bulunamadıysa
+					const eventDates = ['2026-01-30', '2026-01-31', '2026-02-01'];
+					if (eventDates.includes(currentDate)) {
+						return {
+							current: 'Program yükleniyor...',
+							next: 'Lütfen bekleyiniz'
+						};
+					}
+					return {
+						current: 'Etkinlik günü değil',
+						next: 'Winterbytes 30 Ocak - 1 Şubat 2026'
+					};
+				}
+
+				let currentEvent = null;
+				let nextEvent = null;
+
+				for (let i = 0; i < todaySchedule.length; i++) {
+					const event = todaySchedule[i];
+					const eventStart = timeToMinutes(event.time);
+					const eventEnd = eventStart + event.duration;
+
+					if (currentTime >= eventStart && currentTime < eventEnd) {
+						currentEvent = event;
+						nextEvent = todaySchedule[i + 1] || null;
+						break;
+					} else if (currentTime < eventStart) {
+						nextEvent = event;
+						break;
+					}
+				}
+
+				if (!currentEvent && !nextEvent) {
+					// Günün tüm etkinlikleri bitti
+					return {
+						current: 'Bugünkü etkinlikler sona erdi',
+						next: getNextDayEvent(currentDate)
+					};
+				}
+
+				if (!currentEvent) {
+					// Günün ilk etkinliği henüz başlamadı
+					return {
+						current: 'Etkinlik henüz başlamadı',
+						next: nextEvent ? `${nextEvent.time} - ${nextEvent.title}` : 'Belirlenmedi'
+					};
+				}
+
+				return {
+					current: currentEvent.title,
+					next: nextEvent ? `${nextEvent.time} - ${nextEvent.title}` : 'Son etkinlik'
+				};
+			}
+
+			function getNextDayEvent(currentDate) {
+				const dates = Object.keys(eventSchedule).sort();
+				const currentIndex = dates.indexOf(currentDate);
+				
+				if (currentIndex >= 0 && currentIndex < dates.length - 1) {
+					const nextDate = dates[currentIndex + 1];
+					const nextDaySchedule = eventSchedule[nextDate];
+					if (nextDaySchedule && nextDaySchedule.length > 0) {
+						const dateObj = new Date(nextDate);
+						const dayName = dateObj.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long' });
+						return `${dayName} - ${nextDaySchedule[0].time} ${nextDaySchedule[0].title}`;
+					}
+				}
+				
+				return 'Winterbytes sona erdi';
+			}
+
+			function updateEventStatus() {
+				const status = getCurrentEvent();
+				
+				const currentEventElement = document.getElementById('current-event-text');
+				const nextEventElement = document.getElementById('next-event-text');
+				
+				if (currentEventElement) {
+					currentEventElement.textContent = status.current;
+				}
+				
+				if (nextEventElement) {
+					nextEventElement.textContent = status.next;
+				}
+			}
+
+			// Sayfa yüklendiğinde ve her dakika güncelle
+			document.addEventListener('DOMContentLoaded', function() {
+				updateEventStatus();
+				setInterval(updateEventStatus, 60000); // Her dakika güncelle
+			});
+		</script>
+</html>
