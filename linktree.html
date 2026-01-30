@@ -186,8 +186,8 @@
 
 			function getCurrentEvent() {
 				const now = new Date();
-				// Türkiye saatine çevir (UTC+3)
-				const turkeyTime = new Date(now.getTime() + (3 * 60 * 60 * 1000));
+				// Türkiye saatine çevir (Europe/Istanbul timezone)
+				const turkeyTime = new Date(now.toLocaleString("en-US", {timeZone: "Europe/Istanbul"}));
 				const currentDate = turkeyTime.toISOString().split('T')[0];
 				const currentTime = turkeyTime.getHours() * 60 + turkeyTime.getMinutes();
 				
